@@ -66,6 +66,12 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 jupyter notebook projeto_evasao_escolar.ipynb
 ```
 
+Para apenas executar tudo sem abrir a interface (gera uma cópia com as saídas):
+
+```bash
+jupyter nbconvert --to notebook --execute projeto_evasao_escolar.ipynb --output executado.ipynb
+```
+
 Execute as células em ordem (*Run All*). O notebook lê `data/data.csv` por caminho relativo, então deve ser aberto a partir da raiz do repositório.
 
 O notebook já contém as saídas salvas, então os gráficos e tabelas podem ser vistos sem reexecutar.
